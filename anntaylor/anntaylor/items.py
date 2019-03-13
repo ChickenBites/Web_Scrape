@@ -6,17 +6,19 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-
-
+#
+#
 class AnntaylorItem(scrapy.Item):
-    category = scrapy.Field()
+    Category = scrapy.Field()
     url = scrapy.Field()
-    title = scrapy.Field()
-    price = scrapy.Field()
-    # sale_price = scrapy.Field()
-    colors = scrapy.Field()
-    sizes = scrapy.Field()
-    description = scrapy.Field()
-
+    Title = scrapy.Field()
+    originalPrice = scrapy.Field()
+    currentPrice = scrapy.Field()
+    Colors = scrapy.Field()
+    Sizes = scrapy.Field()
+    Description = scrapy.Field()
+    ItemId = scrapy.Field()
+    PaginationImage = scrapy.Field()
+    Material_And_Care = scrapy.Field()
 
 
