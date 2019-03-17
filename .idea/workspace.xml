@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="537b0c74-8de5-46cd-a5fe-ef647fb1d1b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/spiders/anntaylor_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/spiders/anntaylor_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anntaylor/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/debug.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="238">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/spiders/anntaylor_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="60" column="113" selection-start-line="60" selection-start-column="113" selection-end-line="60" selection-end-column="113" />
+            <state relative-caret-position="124">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="31" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
                 <marker date="1552514320128" expanded="true" signature="1243:1345" ph="..." />
@@ -52,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+            <state relative-caret-position="323">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -64,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="87" selection-start-line="87" selection-end-line="90" />
+            <state relative-caret-position="1496">
+              <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -80,13 +78,13 @@
       <list>
         <option value="$PROJECT_DIR$/anntaylor/anntaylor/items.py" />
         <option value="$PROJECT_DIR$/anntaylor/anntaylor/settings.py" />
-        <option value="$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py" />
         <option value="$PROJECT_DIR$/anntaylor/anntaylor/spiders/anntaylor_spider.py" />
+        <option value="$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py" />
         <option value="$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-335" />
     <option name="y" value="163" />
     <option name="width" value="1936" />
@@ -98,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +118,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,10 +160,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.49736565" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33110118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -176,7 +173,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.45684522" weight="0.30877572" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.45684522" weight="0.30769232" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5431548" side_tool="true" weight="0.29623568" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -243,13 +240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/scrapy/spidermiddlewares/depth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -260,6 +250,17 @@
     <entry file="file://$PROJECT_DIR$/debug.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor.csv" />
+    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -267,38 +268,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py">
+    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="1496">
+          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/spiders/anntaylor_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="31" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#24#37#0" expanded="true" />
+            <marker date="1552514320128" expanded="true" signature="1243:1345" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="87" selection-start-line="87" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/spiders/anntaylor_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="60" column="113" selection-start-line="60" selection-start-column="113" selection-end-line="60" selection-end-column="113" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1552514320128" expanded="true" signature="1243:1345" ph="..." />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
         </state>
       </provider>
     </entry>
