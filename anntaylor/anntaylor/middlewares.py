@@ -17,7 +17,6 @@ class Anntaylor_selenium_middleware(object):
     def process_request(self, spider, request):
             self.driver.get(request.url)
             self.driver.implicitly_wait(5)
-            sleep(1)
             body = self.driver.page_source
             return HtmlResponse(url=self.driver.current_url,
                                 body=body,
