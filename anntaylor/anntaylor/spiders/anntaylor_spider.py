@@ -13,16 +13,18 @@ class AnntaylorSpider(CrawlSpider):
         allowed_domains=['anntaylor.com',]
         # start_urls=['https://www.anntaylor.com/polka-dot-tie-front-t-shirt-dress/499671?skuId=26907512&defaultColor=2222&catid=cata000012']
         start_urls = ['https://www.anntaylor.com/all-clothing/cat3630020',
-                      'https://www.anntaylor.com/work/cat2100002',
-                      'https://www.anntaylor.com/shoes-view-all/cata000020',
-                      'https://www.anntaylor.com/accessories-view-all/cata000025',
-                      'https://www.anntaylor.com/petites/cata00004',
-                      'https://www.anntaylor.com/tall/cat140002',
-                      'https://www.anntaylor.com/all-luxewear/cat3750001',
-                      'https://www.anntaylor.com/at-the-moment/cat2600064',
-                      'https://www.anntaylor.com/sale/cata00007',]
+                              'https://www.anntaylor.com/work/cat2100002',
+                              'https://www.anntaylor.com/shoes-view-all/cata000020',
+                              'https://www.anntaylor.com/accessories-view-all/cata000025',
+                              'https://www.anntaylor.com/petites/cata00004',
+                              'https://www.anntaylor.com/tall/cat140002',
+                              'https://www.anntaylor.com/all-luxewear/cat3750001',
+                              'https://www.anntaylor.com/at-the-moment/cat2600064',
+                              'https://www.anntaylor.com/sale-view-all/cata000055?pcid=cata00007&catFeature=true',]
+
+
         for url in start_urls:
-            rules = (Rule(LinkExtractor(unique=True, allow = ('skuId=.*',)), follow=True, callback="parse_item"),)
+            rules = (Rule(LinkExtractor(canonicalize=True, unique=True, allow = ('skuId=.*',)), follow=True, callback="parse_item"),)
         # , deny =('/cat.*',))
         # allow = ('skuId=.*',)
                 # Rule(LinkExtractor(canonicalize=True, unique=True),follow=True, callback="parse_item")
@@ -59,9 +61,20 @@ class AnntaylorSpider(CrawlSpider):
             item["currentPrice"] = response.xpath('//strong[@class="price sale"]//span/text()').extract()
             item["Colors"] = response.xpath(' //fieldset[@class="colors"]//div[@role="radiogroup"]/a/text()').extract()
             item["Sizes"] = response.xpath('//fieldset[@class="sizes"]//div[@tabindex="-1"]//a/text()').extract()
-            item["PaginationImage"]=response.xpath('//div[@class="pagination-wrapper"]//img/@src').extract()
+            Pagination_1=response.xpath('//div[@class="pagination-wrapper"]//div[@data-idx="0"]//img/@src').extract()
+            Pagination_1=("".join(Pagination_1))
+            Pagination_2=response.xpath('//div[@class="pagination-wrapper"]//div[@data-idx="1"]//img/@src').extract()
+            Pagination_2 = ("".join(Pagination_2))
+            Pagination_3=response.xpath('//div[@class="pagination-wrapper"]//div[@data-idx="2"]//img/@src').extract()
+            Pagination_3 = ("".join(Pagination_3))
+            if Pagination_1:
+                item["PaginationImages"]=Pagination_1
+            if Pagination_1 and Pagination_2:
+                item["PaginationImages"]=Pagination_1 + "\n" + Pagination_2
+            if Pagination_1 and Pagination_2 and Pagination_3:
+                item["PaginationImages"] = Pagination_1 + "\n" + Pagination_2 + "\n" + Pagination_3
+            # item["PaginationImage"]=response.xpath('//div[@class="pagination-wrapper"]/div[@data-idx="0"]/img/@src').extract()
             item["Description"]= response.xpath('//span[@class="description"]/text()').extract_first()
             item["Material_And_Care"] = response.xpath('//span[6]//span[1]/text() | //span[6]//span[2]/text() | //span[6]//span[3]/text() | //span[6]//span[4]/text()').extract()
-
 
             yield item

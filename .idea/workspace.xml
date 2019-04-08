@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="537b0c74-8de5-46cd-a5fe-ef647fb1d1b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anntaylor/anntaylor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/anntaylor/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anntaylor/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/anntaylor/debug.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="219">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -148,6 +146,14 @@
       <option name="presentableId" value="Default" />
       <updated>1551712777534</updated>
     </task>
+    <task id="LOCAL-00001" summary="'updated with some regex again'">
+      <created>1552819208131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552819208131</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -173,8 +179,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.45684522" weight="0.30769232" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5431548" side_tool="true" weight="0.29623568" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.45610118" visible="true" weight="0.30769232" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5438988" side_tool="true" weight="0.30769232" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -199,6 +205,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'updated with some regex again'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'updated with some regex again'" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/scrapy/core/engine.py">
@@ -288,8 +298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anntaylor/anntaylor/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="219">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="48" />
         </state>
       </provider>
     </entry>

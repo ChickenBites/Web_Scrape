@@ -10,19 +10,28 @@ class AnntaylorPipeline(object):
         if item["currentPrice"]:
             currentPrice = ("".join(item['currentPrice']))
             currentPrice = [e for e in re.split("[^0-9]", currentPrice) if e != '']
-            item["currentPrice"]= "[" + currentPrice +"]"
+            item["currentPrice"]= str(min(map(int, currentPrice)))
         if item['originalPrice']:
             originalprice=("".join(item['originalPrice']))
             originalprice=[e for e in re.split("[^0-9]", originalprice) if e != '']
-            item['originalPrice'] ="[" + str(min(map(int, originalprice))) + "]"
+            item['originalPrice'] = str(min(map(int, originalprice)))
         if item['Category']:
             Category = ("".join(item['Category']))
-            Category=re.sub(r'((\w+))', r'\1-', Category)
-            item['Category'] = "[" + Category + "]"
-        if item['Description']:
-            item['Description'] = "[" + item['Description'] +"]"
-        if item['PaginationImage']:
-            PaginationImage = "[" +("".join(item['PaginationImage'])).replace('?$pdpthumb$',' ') +"]"
-            item['PaginationImage'] = PaginationImage.replace('//anninc', 'http://anninc')
-            return item
+            item["Category"]=re.sub(r'>', '->', Category)
+        if item["Colors"]:
+            Colors=['" ' + color + '"' for color in item["Colors"]]
+            Colors=(",".join(Colors))
+            item["Colors"]="[" + Colors + "]"
+        if item["Sizes"]:
+            Sizes = ['" ' + size + '"' for size in item["Sizes"]]
+            Sizes = (",".join(Sizes))
+            item["Sizes"] = "[" + Sizes + "]"
+            if item["PaginationImages"]:
+                Images = ['" ' + image + '"' for image in item["PaginationImages"]]
+                Images = (",".join(Images))
+                item["PaginationImages"] = "[" + Images + "]"
+        if item['PaginationImages']:
+            PaginationImages = ("".join(item['PaginationImages'])).replace('?$pdpthumb$','')
+            item['PaginationImages'] = "[" + PaginationImages.replace('//anninc', 'http://anninc') +"]"
+        return item
 

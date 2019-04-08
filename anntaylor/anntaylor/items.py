@@ -18,7 +18,7 @@ class AnntaylorItem(scrapy.Item):
     Sizes = scrapy.Field()
     Description = scrapy.Field()
     ItemId = scrapy.Field()
-    PaginationImage = scrapy.Field()
+    PaginationImages = scrapy.Field()
     Material_And_Care = scrapy.Field()
 
 
