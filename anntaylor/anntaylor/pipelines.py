@@ -26,10 +26,6 @@ class AnntaylorPipeline(object):
             Sizes = ['" ' + size + '"' for size in item["Sizes"]]
             Sizes = (",".join(Sizes))
             item["Sizes"] = "[" + Sizes + "]"
-            if item["PaginationImages"]:
-                Images = ['" ' + image + '"' for image in item["PaginationImages"]]
-                Images = (",".join(Images))
-                item["PaginationImages"] = "[" + Images + "]"
         if item['PaginationImages']:
             PaginationImages = ("".join(item['PaginationImages'])).replace('?$pdpthumb$','')
             item['PaginationImages'] = "[" + PaginationImages.replace('//anninc', 'http://anninc') +"]"

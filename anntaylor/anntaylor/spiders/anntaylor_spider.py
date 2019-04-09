@@ -68,11 +68,11 @@ class AnntaylorSpider(CrawlSpider):
             Pagination_3=response.xpath('//div[@class="pagination-wrapper"]//div[@data-idx="2"]//img/@src').extract()
             Pagination_3 = ("".join(Pagination_3))
             if Pagination_1:
-                item["PaginationImages"]=Pagination_1
+                item["PaginationImages"]='"' + Pagination_1 + '"'
             if Pagination_1 and Pagination_2:
-                item["PaginationImages"]=Pagination_1 + "\n" + Pagination_2
+                item["PaginationImages"]= '"' + Pagination_1 + '"' + "\n" + '"' +Pagination_2 + '"'
             if Pagination_1 and Pagination_2 and Pagination_3:
-                item["PaginationImages"] = Pagination_1 + "\n" + Pagination_2 + "\n" + Pagination_3
+                item["PaginationImages"] = '"' + Pagination_1 + '"' + "\n" '"' +Pagination_2 + '"' + "\n" + '"' +Pagination_3 + '"'
             # item["PaginationImage"]=response.xpath('//div[@class="pagination-wrapper"]/div[@data-idx="0"]/img/@src').extract()
             item["Description"]= response.xpath('//span[@class="description"]/text()').extract_first()
             item["Material_And_Care"] = response.xpath('//span[6]//span[1]/text() | //span[6]//span[2]/text() | //span[6]//span[3]/text() | //span[6]//span[4]/text()').extract()
